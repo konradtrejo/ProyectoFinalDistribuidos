@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/Archivos"
+        android:title="Archivos"
+        android:icon="@drawable/ic_baseline_folder"
+        />
+    <item
+        android:id="@+id/Favoritos"
+        android:title="Favoritos"
+        android:icon="@drawable/ic_baseline_favorite"
+        />
+
+    <item
+        android:id="@+id/Compartidos"
+        android:title="Compartioos"
+        android:icon="@drawable/ic_baseline_folder_shared"
+        />
+
+
+</menu>
