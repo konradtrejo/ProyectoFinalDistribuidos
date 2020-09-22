@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="200dp"
+    android:layout_height="500dp"
 
     android:layout_alignParentBottom="true"
     android:padding="@dimen/activity_horizontal_margin"
@@ -13,8 +13,41 @@
     tools:context=".SubirArchivoActivity"
     tools:visibility="visible">
 
+        <ProgressBar
+            android:visibility="gone"
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="32dp"
+            app:layout_constraintBottom_toTopOf="@+id/select_file"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.532"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/select_file"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/button_back_2"
+            android:text="@string/seleccionar_file"
+            android:textColor="#EBEBDB"
+            app:layout_constraintBottom_toTopOf="@+id/upload_file"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.973" />
+
+        <Button
+            android:id="@+id/upload_file"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="161dp"
@@ -23,10 +56,27 @@
             android:layout_marginBottom="267dp"
             android:background="@drawable/button_background"
             android:text="@string/subir_archivos"
+            android:textColor="#EBDEDE"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.472"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.637" />
+            app:layout_constraintVertical_bias="0.456" />
+
+        <TextView
+            android:id="@+id/file_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="24dp"
+            app:layout_constraintBottom_toTopOf="@+id/select_file"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.312"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.98" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
